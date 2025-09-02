@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/cart.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex flex-3">
+                        <span><i class="fas fa-envelope"></i>Email Address:
+                            Autocarx@gmail.com</span>
+                        <span><i class="fas fa-phone"></i>Contact Number:
+                            +91-7896850145</span>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-decoration-none p-0 text-dark"
+                                type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="ms-3 loc" style="color: white;">
+                                    <i
+                                        class="fa-solid fa-location-crosshairs"></i>
+                                    Location: Los Angeles
+                                    <i
+                                        class="fa-solid fa-chevron-down ms-2"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>New
+                                        York</a></li>
+                                <li><a class="dropdown-item active" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>Los
+                                        Angeles</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>Chicago</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>Houston</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>Phoenix</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>Philadelphia</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>San
+                                        Antonio</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>San
+                                        Diego</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>Dallas</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-location-dot me-2"></i>San
+                                        Jose</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Assets/Group 6.png" alt="Logo">
+                </a>
+
+                <!-- Offcanvas toggler (visible only on mobile/tablet) -->
+                <button class="navbar-toggler d-lg-none" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Navbar (visible from lg and up) -->
+                <div
+                    class="collapse navbar-collapse d-none d-lg-flex justify-content-between"
+                    id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link"
+                                href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="./service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="./product.html">Spare Parts</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="./about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="./contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#"><img data-bs-toggle="modal"
+                            data-bs-target="#searchModal" style="width: 50px; height: 50px;"
+                                src="./Assets/Group 8.png" alt></a>
+                        <a href="./cart.html"><img style="width: 50px; height: 50px;"
+                                src="./Assets/Group 9.png" alt></a>
+                        <button class="btn btn-login text-white"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Log in</button>
+                    </div>
+                </div>
+
+                <!-- Offcanvas Navbar (mobile/tablet only) -->
+                <div class="offcanvas offcanvas-end text-bg-dark d-lg-none"
+                    tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5> -->
+                        <button type="button" class="btn-close btn-close-white"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div
+                        class="offcanvas-body d-flex flex-column justify-content-between">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./service.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./product.html">Spare Parts</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./about.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./contact.html">Contact</a></li>
+                        </ul>
+
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                            <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"><img data-bs-toggle="modal"
+                            data-bs-target="#searchModal" style="width: 50px; height: 50px;"
+                                    src="./Assets/Group 8.png" alt></a>
+                            <a href="./cart.html"><img style="width: 50px; height: 50px;"
+                                    src="./Assets/Group 9.png" alt></a>
+                            <button class="btn btn-login text-white"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="login-container">
+                            <!-- <button class="close-btn" onclick="closeModal()">&times;</button> -->
+
+                            <h2 class="login-title"
+                                style="text-align: center;">Log In</h2>
+                            <p class="login-subtitle"
+                                style="text-align: center;">How to i get started
+                                lorem ipsum dolor at?
+                            </p>
+
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" type="submit"
+                                        class="form-control"
+                                        placeholder="User Name*" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="password" type="submit"
+                                        class="form-control"
+                                        placeholder="Password*" required>
+                                </div>
+
+                                <div class="f-login">
+                                    <div class="forgot-password"
+                                        style=" padding-left: 327px;">
+                                        <a href="#"
+                                            onclick="forgotPassword()">Forget
+                                            Password?</a>
+                                    </div>
+
+                                    <button type="submit"
+                                        class="modals-btn-login btn btn-social">Log
+                                        In</button>
+                                </div>
+                            </form>
+
+                            <div class="divider"
+                                style="text-align: center;">Or</div>
+
+                            <div class="f-g-modals">
+                                <div class="facebbok-modals">
+                                    <button class="btn btn-social"
+                                        onclick="loginWithGoogle()">
+                                        <i class="fa-brands fa-google"></i>
+                                        Login with Google
+                                    </button>
+                                </div>
+
+                                <div class="facebook-modals">
+                                    <button class="btn btn-social"
+                                        onclick="loginWithFacebook()">
+                                        <i
+                                            class="fab fa-facebook-f facebook-icon"></i>
+                                        Login with Facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                         <div class="modal fade" id="searchModal" tabindex="-1"
+            aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- large modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title"
+                            id="searchModalLabel">Search</h5> -->
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Your search content goes here -->
+                        <input type="text" class="form-control"
+                            placeholder="Type to search...">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-header">
+                <h1 class="cart-title">Your Cart</h1>
+                <button class="close-btn">×</button>
+            </div>
+
+            <div class="cart-content">
+                <div class="left-section">
+                    <div class="address-section">
+                        <input type="text" name="address" placeholder="Enter your address" required>
+                    </div>
+
+                    <div class="payment-section">
+                        <div class="payment-title">Select Payment Method</div>
+                        <div class="payment-options">
+                            <div class="payment-option">
+                                <input type="radio" id="card" name="payment"
+                                    checked>
+                                <label for="card">Credit / Debit / ATM
+                                    Card</label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="upi" name="payment">
+                                <label for="upi">UPI</label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="paypal" name="payment">
+                                <label for="paypal">Paypal</label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="netbanking"
+                                    name="payment">
+                                <label for="netbanking">Net Banking</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="products-title">Your Products</div>
+
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img
+                                src="./assets/image (37).png"
+                                alt="Aluminum Spark Plug" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name">Aluminum Spark
+                                    Plug</div>
+                                <div class="product-info">Brand Name: KM
+                                    Racing</div>
+                                <div class="product-info">Part ID:
+                                    652236712</div>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn">−</button>
+                                    <span class="quantity">1</span>
+                                    <button class="quantity-btn">+</button>
+                                </div>
+                            </div>
+                            <div class="product-price">$50.00</div>
+                        </div>
+
+                        <div class="product-item">
+                            <img
+                                src="./assets/image (41).png"
+                                alt="Aluminum Spark Plug" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name">Aluminum Spark
+                                    Plug</div>
+                                <div class="product-info">Brand Name:
+                                    Oilax</div>
+                                <div class="product-info">Part ID:
+                                    925567104</div>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn">−</button>
+                                    <span class="quantity">1</span>
+                                    <button class="quantity-btn">+</button>
+                                </div>
+                            </div>
+                            <div class="product-price">$40.00</div>
+                        </div>
+                    </div>
+
+                    <div class="total-section">
+                        <div class="total-row">
+                            <div class="total-label">Total Amount</div>
+                            <div class="total-amount">$90.00</div>
+                        </div>
+
+                        <button class="payment-btn">Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        // Add functionality to quantity buttons
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('quantity-btn')) {
+                const isIncrement = e.target.textContent === '+';
+                const quantityElement = e.target.parentNode.querySelector('.quantity');
+                const productItem = e.target.closest('.product-item');
+                const priceElement = productItem.querySelector('.product-price');
+                
+                let quantity = parseInt(quantityElement.textContent);
+                let basePrice = isIncrement ? 
+                    (quantity === 1 ? parseFloat(priceElement.textContent.replace('$', '')) : parseFloat(priceElement.textContent.replace('$', '')) / quantity) :
+                    parseFloat(priceElement.textContent.replace('$', '')) / quantity;
+                
+                if (isIncrement) {
+                    quantity++;
+                } else if (quantity > 1) {
+                    quantity--;
+                }
+                
+                quantityElement.textContent = quantity;
+                priceElement.textContent = '$' + (basePrice * quantity).toFixed(2);
+                
+                // Update total
+                updateTotal();
+            }
+        });
+        
+        function updateTotal() {
+            const prices = document.querySelectorAll('.product-price');
+            let total = 0;
+            
+            prices.forEach(price => {
+                total += parseFloat(price.textContent.replace('$', ''));
+            });
+            
+            document.querySelector('.total-amount').textContent = '$' + total.toFixed(2);
+        }
+        
+        // Close button functionality
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            alert('Cart closed');
+        });
+        
+        // Payment button functionality
+        document.querySelector('.payment-btn').addEventListener('click', function() {
+            const selectedPayment = document.querySelector('input[name="payment"]:checked').nextElementSibling.textContent;
+            alert(`Processing payment via ${selectedPayment}`);
+        });
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+    </body>
+</html>

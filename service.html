@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./CSS/service.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-3">
+                    <span><i class="fas fa-envelope"></i>Email Address: Autocarx@gmail.com</span>
+                    <span><i class="fas fa-phone"></i>Contact Number: +91-7896850145</span>
+                    <div class="dropdown">
+                        <button class="btn btn-link text-decoration-none p-0 text-dark" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="ms-3 loc" style="color: white;">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                                Location: Los Angeles
+                                <i class="fa-solid fa-chevron-down ms-2"></i>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot me-2"></i>New
+                                    York</a></li>
+                            <li><a class="dropdown-item active" href="#"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Los Angeles</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Chicago</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Houston</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Phoenix</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Philadelphia</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot me-2"></i>San
+                                    Antonio</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot me-2"></i>San
+                                    Diego</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Dallas</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot me-2"></i>San
+                                    Jose</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#" onclick="location.reload(); return false;">
+            <img src="./Assets/Group 6.png" alt="Logo">
+        </a>
+
+        <!-- Offcanvas toggler (visible only on mobile/tablet) -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Navbar (visible from lg and up) -->
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="./product.html">Spare Parts</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+                <a href="#"><img data-bs-toggle="modal"
+                            data-bs-target="#searchModal" style="width: 50px; height: 50px;" src="./Assets/Group 8.png" alt=""></a>
+                <a href="./cart.html"><img style="width: 50px; height: 50px;" src="./Assets/Group 9.png" alt=""></a>
+                <button class="btn btn-login text-white" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Log in</button>
+            </div>
+        </div>
+
+        <!-- Offcanvas Navbar (mobile/tablet only) -->
+        <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5> -->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./product.html">Spare Parts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-4">
+                    <a href="#"><img data-bs-toggle="modal"
+                            data-bs-target="#searchModal" style="width: 50px; height: 50px;" src="./Assets/Group 8.png" alt=""></a>
+                    <a href="cart.html"><img style="width: 50px; height: 50px;" src="./Assets/Group 9.png" alt=""></a>
+                    <button class="btn btn-login text-white" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Login Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login-container">
+                        <!-- <button class="close-btn" onclick="closeModal()">&times;</button> -->
+
+                        <h2 class="login-title" style="text-align: center;">Log In</h2>
+                        <p class="login-subtitle" style="text-align: center;">How to i get started lorem ipsum dolor at?
+                        </p>
+
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" type="submit" class="form-control" placeholder="User Name*" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="password" type="submit" class="form-control" placeholder="Password*" required>
+                            </div>
+
+                            <div class="f-login">
+                                <div class="forgot-password" style=" padding-left: 327px;">
+                                    <a href="#" onclick="forgotPassword()">Forget Password?</a>
+                                </div>
+
+                                <button type="submit" class="modals-btn-login btn btn-social">Log In</button>
+                            </div>
+                        </form>
+
+                        <div class="divider" style="text-align: center;">Or</div>
+
+                        <div class="f-g-modals">
+                            <div class="facebbok-modals">
+                                <button class="btn btn-social" onclick="loginWithGoogle()">
+                                    <i class="fa-brands fa-google"></i>
+                                    Login with Google
+                                </button>
+                            </div>
+
+                            <div class="facebook-modals">
+                                <button class="btn btn-social" onclick="loginWithFacebook()">
+                                    <i class="fab fa-facebook-f facebook-icon"></i>
+                                    Login with Facebook
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-modal -->
+     <div class="modal fade" id="searchModal" tabindex="-1"
+            aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- large modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title"
+                            id="searchModalLabel">Search</h5> -->
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Your search content goes here -->
+                        <input type="text" class="form-control"
+                            placeholder="Type to search...">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Services</h1>
+        </div>
+    </section>
+    <div class="container">
+        <!-- Services Section -->
+        <div class="text-center mb-5" style="margin-top: 75px;">
+            <p class="section-title">SERVICES</p>
+            <h2 class="display-6 fw-bold mb-4">We offer a wide range<br>of car services</h2>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div class="row g-4 mb-5">
+            <!-- General Service -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class="service-icon">
+                            <img class="" src="./Assets/Rectangle 12.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">General Service</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. Quam massa vestibulum sagittis
+                        sed ut elementum commodo. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.
+                    </p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Wheels and Tyres -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class=" service-icon">
+                            <img class="" src="./Assets/Rectangle 18.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Wheels an Tyres</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. Quam massa vestibulum sagittis
+                        sed ut elementum commodo. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.
+                    </p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Fuel Exchange -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class="service-icon">
+                            <img class="" src="./Assets/Rectangle 19.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Fuel Exchange</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. Quam massa vestibulum sagittis
+                        sed ut elementum commodo. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.
+                    </p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Vehichle Maintenance -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class="service-icon">
+                            <img class="" src="./Assets/Car.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Vehichle Maintenance</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. A nulla venenatis vitae ut semper
+                        accumsan. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.</p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Battery Change -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class="service-icon">
+                            <img class="" src="./Assets/Battry.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Battery Change</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. A nulla venenatis vitae ut semper
+                        accumsan. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.</p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Oil and Break Checks -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class=" service-icon">
+                            <img class="" src="./Assets/oil.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Oil and Break Checks</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. A nulla venenatis vitae ut semper
+                        accumsan. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.</p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <!-- Affordable Price -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class=" service-icon">
+                            <img class="" src="./Assets/6334885e18a2280eb9cfc086_Affordable Price 1.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Affordable Price</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. A nulla venenatis vitae ut semper
+                        accumsan. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.</p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <!-- Car Diagonstic -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class=" service-icon">
+                            <img class="" src="./Assets/oil (2).png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Car Diagonstic</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. A nulla venenatis vitae ut semper
+                        accumsan. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.</p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <!-- Tire Fix & Replace -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card p-4">
+                    <div class="box d-flex align-items-center" style="gap: 17px;">
+                        <div class=" service-icon">
+                            <img class="" src="./Assets/Replacements 1.png" alt="">
+                        </div>
+                        <h5 class="fw-bold mb-3">Tire Fix & Replace</h5>
+                    </div>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur. A nulla venenatis vitae ut semper
+                        accumsan. Nibh ultrices porta orci vestibulum lacinia blandit. Risque mollis.</p>
+                    <a href="#" class="see-more-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="text-center mb-5">
+        <button class="btn btn-primary-custom me-3">Schedule an Appointment</button>
+        <!-- <button class="btn btn-outline-custom">Browse Service</button> -->
+    </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="why-choose-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./Assets/image (1).png" alt="Mechanic working" class="mechanic-image">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <p class="section-title text-center">WHY US</p>
+                    <h2 class="display-6 fw-bold mb-4 text-center">Why Choose Us</h2>
+                    <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur. Mattis vel est ultrices pretium
+                        fusce mauris imperdiet. Arcu neque fusce bibendum purus.</p>
+
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="">
+                                    <img style="margin-right: 20px;" src="./Assets/1.png" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">Experienced Mechanics</h6>
+                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="">
+                                    <img style="margin-right: 20px;"
+                                        src="./Assets/6334885edfc36676b1ff2e79_Quality Service (1) 1.png" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">24/7 Quality Service</h6>
+                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="">
+                                    <img style="margin-right: 20px;" src="./Assets/Svg.png" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">10+ years of experience</h6>
+                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary-custom mt-3">Schedule an Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-label">Packages</div>
+                    <h2 class="display-4 fw-bold mb-3">Choose the Right Plan for Your Car</h2>
+                    <p class="lead text-muted">Professional car maintenance services tailored to your needs</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6 custom-box">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body d-flex flex-column justify-content-between p-4 ">
+                            <div class="plan-header">
+                                <h3 class="card-title fw-bold mb-3 text-center">Basic Plan</h3>
+                                <p class="text-muted text-center">Car Detailing</p>
+                            </div>
+                            <hr>
+                            <div class="price mb-3 text-center">$99<span class="fs-6 text-muted">/monthly</span></div>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Basic Car Wash</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Engine Cleaning</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Tire Maintenance</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Basic Inspection
+                                </li>
+                            </ul>
+
+                            <button class="btn btn-red w-100">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body d-flex flex-column justify-content-between p-4 ">
+                            <h3 class="card-title fw-bold mb-3 text-center">Standard Plan</h3>
+                            <p class="text-muted text-center">Oil & Detailing</p>
+                            <hr>
+                            <div class="price mb-3 text-center">$124<span class="fs-6 text-muted">/monthly</span></div>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Everything inBasic</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Oil Change</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Brake Check</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt="">Filter
+                                    Replacement</li>
+                            </ul>
+
+                            <button class="btn btn-red w-100">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card pricing-card premium h-100">
+
+                        <div class="card-body d-flex flex-column justify-content-between p-4 ">
+                            <h3 class="card-title fw-bold mb-3 text-center">Premium Plan</h3>
+                            <p class="text-muted text-center">Everything</p>
+                            <hr>
+                            <div class="price mb-3 text-center">$189<span class="fs-6 text-muted">/monthly</span></div>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt=""></i>Everything
+                                    in Standard</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt=""></i>Free Towing
+                                    Service</li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt=""></i>24/7
+                                    Emergency Service </li>
+                                <li class="mb-2"><img style="padding-right: 15px;"
+                                        src="./Assets/simple-line-icons_check.png" alt=""></i>Premium Car
+                                    Wash</li>
+                            </ul>
+
+                            <button class="btn btn-red w-100">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="track-record">
+        <div class="container">
+            <h2 class="text-center mb-4">We Repair All Makes of Automobiles</h2>
+            <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur. Cras sed et in. At placerat.</p>
+            <div class="brand-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Assets/image 13.png" alt="Toyota Logo" class="brand-logo-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image 14.png" alt="Honda Logo" class="brand-logo-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image 15.png" alt="BMW Logo" class="brand-logo-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image 16.png" alt="Ford Logo" class="brand-logo-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image 17.png" alt="Mercedes Logo" class="brand-logo-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image 18.png" alt="Audi Logo" class="brand-logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mt-4">
+                <div class="col-lg-5 col-md-12">
+                    <div class="footer-logo mb-4">
+                        <img src="./Assets/Group 6 (1).png" alt="logo">
+                    </div>
+                    <p class="footer-content-p1 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        aliquam justo nec ligula eleifend efficitur.</p>
+                    <p class="footer-content-p2 mb-3 ">Subscribe to our newsletter</p>
+                    <input type="email" id="footer-email" class="form-control mb-3 " placeholder="Enter your email">
+                    <div class="footer-side1-btn">
+                        <a href="#" class="btn">Subscribe Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footer2div" style="margin-top: 50px;">
+                        <h3 class="mb-4">Quick Links</h3>
+                        <div class="mb-3"><a href="./about.html">About Us</a></div>
+                        <div class="mb-3"><a href="./contact.html">Contact Us</a></div>
+                        <div class="mb-3"><a href="./product.html">Spare Parts</a></div>
+                        <div><a href="./service.html">Services</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="footer3div " style="margin-top: 50px;">
+                        <h3 class="mb-4">Address</h3>
+                        <p class="mb-2">(323) 661-3953</p>
+                        <p class="mb-2">3506 Madera Ave</p>
+                        <p>Los Angeles, California(CA), 90039</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footer4div" style="margin-top: 50px;">
+                        <h3 class="mb-4">Stay Connected</h3>
+                        <div class="footer4div-logo-content d-flex align-items-center gap-2 mb-2">
+                            <img src="./Assets/Group 52.png" alt="facebook">
+                            <a href="#">Facebook</a>
+                        </div>
+                        <div class="footer4div-logo-content d-flex align-items-center gap-2 mb-2">
+                            <img src="./Assets/Group 53.png" alt="instagram">
+                            <a href="#">Instagram</a>
+                        </div>
+                        <div class="footer4div-logo-content d-flex align-items-center gap-2">
+                            <img src="./Assets/Group 56.png" alt="youtube">
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line my-4"></div>
+            <div
+                class="footer-bottom d-flex flex-column flex-md-row justify-content-md-between align-items-md-center flex-wrap gap-3">
+                <p>© 2025 Autocar X. All rights reserved.</p>
+                <div class="footer-bottom-links d-flex gap-3 flex-wrap">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.brand-swiper', {
+                loop: true,
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    reverseDirection: false,
+                },
+                speed: 3000,
+                centeredSlides: false,
+                freeMode: true,
+                freeModeMomentum: false,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 3,
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                    1200: {
+                        slidesPerView: 6,
+                        spaceBetween: 20,
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
