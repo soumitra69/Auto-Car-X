@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'clarityCity';
-    src: url('./fonts/clarityCity-Regular.woff2') format('woff2'),
-        url('./fonts/clarityCity-Regular.woff') format('woff');
+    src: local('clarityCity');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -396,7 +395,7 @@ body {
 
 /* Banner-section */
 .hero-section {
-    background-image: url(../Assets/banner.jpg);
+    background-image: url(../assets/banner.jpg);
     background-size: cover;
     background-position: center;
     min-height: 450px;

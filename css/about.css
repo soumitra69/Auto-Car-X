@@ -389,7 +389,7 @@ body {
 
 /* Banner-section */
 .hero-section {
-    background-image: url(../Assets/banner.jpg);
+    background-image: url(../assets/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 450px;

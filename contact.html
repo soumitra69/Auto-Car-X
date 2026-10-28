@@ -7,8 +7,8 @@
     <title>Contact</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./CSS/index.css"> -->
-    <link rel="stylesheet" href="./CSS/contact.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -61,7 +61,7 @@
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#" onclick="location.reload(); return false;">
-            <img src="./Assets/Group 6.png" alt="Logo">
+            <img src="./assets/group 6.png" alt="Logo">
         </a>
 
         <!-- Offcanvas toggler (visible only on mobile/tablet) -->
@@ -82,8 +82,8 @@
 
             <div class="d-flex align-items-center gap-3">
                 <a href="#"><img data-bs-toggle="modal"
-                            data-bs-target="#searchModal" style="width: 50px; height: 50px;" src="./Assets/Group 8.png" alt=""></a>
-                <a href="./cart.html"><img style="width: 50px; height: 50px;" src="./Assets/Group 9.png" alt=""></a>
+                            data-bs-target="#searchModal" style="width: 50px; height: 50px;" src="./assets/group 8.png" alt=""></a>
+                <a href="./cart.html"><img style="width: 50px; height: 50px;" src="./assets/group 9.png" alt=""></a>
                 <button class="btn btn-login text-white" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Log in</button>
             </div>
@@ -108,8 +108,8 @@
 
                 <div class="d-flex align-items-center gap-3 mt-4">
                     <a href="#"><img data-bs-toggle="modal"
-                            data-bs-target="#searchModal" style="width: 50px; height: 50px;" src="./Assets/Group 8.png" alt=""></a>
-                    <a href="./cart.html"><img style="width: 50px; height: 50px;" src="./Assets/Group 9.png" alt=""></a>
+                            data-bs-target="#searchModal" style="width: 50px; height: 50px;" src="./assets/group 8.png" alt=""></a>
+                    <a href="./cart.html"><img style="width: 50px; height: 50px;" src="./assets/group 9.png" alt=""></a>
                     <button class="btn btn-login text-white" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Log in</button>
                 </div>
@@ -278,7 +278,7 @@
                 <div class="col-lg-6">
 
                         <div class="map-image-wrapper">
-    <img src="./Assets/Rectangle 61.png" alt="Our Location Map" style="width:100%; display:block;">
+    <img src="./assets/rectangle 61.png" alt="Our Location Map" style="width:100%; display:block;">
     <div class="map-overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4); color:#fff;">
         <div class="map-overlay-content" style="text-align:center;">
             <i class="fas fa-map-marker-alt fa-2x"></i>
@@ -311,7 +311,7 @@
             <div class="row g-4 mt-4">
                 <div class="col-lg-5 col-md-12">
                     <div class="footer-logo mb-4">
-                        <img src="./Assets/Group 6 (1).png" alt="logo">
+                        <img src="./assets/group 6 (1).png" alt="logo">
                     </div>
                     <p class="footer-content-p1 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                         aliquam justo nec ligula eleifend efficitur.</p>
@@ -342,15 +342,15 @@
                     <div class="footer4div" style="margin-top: 50px;">
                         <h3 class="mb-4">Stay Connected</h3>
                         <div class="footer4div-logo-content d-flex align-items-center gap-2 mb-2">
-                            <img src="./Assets/Group 52.png" alt="facebook">
+                            <img src="./assets/group 52.png" alt="facebook">
                             <a href="#">Facebook</a>
                         </div>
                         <div class="footer4div-logo-content d-flex align-items-center gap-2 mb-2">
-                            <img src="./Assets/Group 53.png" alt="instagram">
+                            <img src="./assets/group 53.png" alt="instagram">
                             <a href="#">Instagram</a>
                         </div>
                         <div class="footer4div-logo-content d-flex align-items-center gap-2">
-                            <img src="./Assets/Group 56.png" alt="youtube">
+                            <img src="./assets/group 56.png" alt="youtube">
                             <a href="#">YouTube</a>
                         </div>
                     </div>
@@ -399,7 +399,7 @@
         });
 
         // Get Directions button functionality
-        document.querySelector('.get-directions-btn').addEventListener('click', function () {
+        document.querySelector('.get-directions-btn')?.addEventListener('click', function () {
             // You can replace this with actual Google Maps directions or other map service
             const address = "3506 Madera Ave, Los Angeles, CA 90039";
             const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;

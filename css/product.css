@@ -3,7 +3,7 @@
    ========================================================================== */
 @font-face {
     font-family: ClarityCity;
-    src: url(./fonts/clarity-city/TrueType/ClarityCity-Medium.ttf);
+    src: local('ClarityCity');
 }
 
 
@@ -928,7 +928,7 @@ body {
 
 /* Banner-section */
 .hero-section {
-    background-image: url(../Assets/banner.jpg);
+    background-image: url(../assets/banner.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -1525,7 +1525,7 @@ body {
 
 /* Banner-section */
 .hero-section {
-    background-image: url(../Assets/banner.jpg);
+    background-image: url(../assets/banner.jpg);
     background-size: cover;
     background-position: center;
     min-height: 450px;

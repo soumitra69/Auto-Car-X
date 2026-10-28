@@ -379,7 +379,7 @@ span {
 
 /* Hero Section */
 .hero-section {
-    background-image: url(../Assets/banner.jpg);
+    background-image: url(../assets/banner.jpg);
     background-size: cover;
     background-position: center;
     min-height: 450px;

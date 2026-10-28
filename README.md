@@ -3,7 +3,8 @@
 ## 🚗 Project Overview
 Auto Car X is a comprehensive car service and maintenance website that provides professional automotive services to customers. This project serves as the final project for Webskitters Academy, showcasing modern web development skills and responsive design principles.
 
-**Live Demo:** [https://auto-car-x.netlify.app/](https://auto-car-x.netlify.app/)
+**Live Demo (GitHub Pages):** [https://soumitra69.github.io/Auto-Car-X/](https://soumitra69.github.io/Auto-Car-X/)
+**Live Demo (Netlify):** [https://auto-car-x.netlify.app/](https://auto-car-x.netlify.app/)
 **Figma Design:** [View Design System](https://www.figma.com/design/QmXLuHnVTTObtflyppvFu6/SOS--Chandan-Copy-?node-id=341-2589&t=NyVhI70HHR9SpCO9-0)
 
 ## 📋 Table of Contents
@@ -251,7 +252,7 @@ This project is part of the Webskitters Academy curriculum and is intended for e
 - **LinkedIn**: [Click](https://www.linkedin.com/in/soumitrasamanta69/)
 
 ### Project Links
-- **Live Demo**: [https://auto-car-x.netlify.app/](https://auto-car-x.netlify.app/)
+- **Live Demo**: [https://soumitra69.github.io/Auto-Car-X/](https://soumitra69.github.io/Auto-Car-X/) | [https://auto-car-x.netlify.app/](https://auto-car-x.netlify.app/)
 - **Figma Design**: [View Design System](https://www.figma.com/design/QmXLuHnVTTObtflyppvFu6/SOS--Chandan-Copy-?node-id=341-2589&t=NyVhI70HHR9SpCO9-0)
 - **Repository**: [Your GitHub Repository URL]
 - **Documentation**: This README file
