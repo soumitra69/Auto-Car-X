@@ -340,7 +340,7 @@
         <script>
         // Add functionality to quantity buttons
         document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('quantity-btn')) {
+            if (e.target.classList.contains('legacy-quantity-btn-disabled')) {
                 const isIncrement = e.target.textContent === '+';
                 const quantityElement = e.target.parentNode.querySelector('.quantity');
                 const productItem = e.target.closest('.product-item');
@@ -388,6 +388,7 @@
         });
     </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+     <script src="./script.js"></script>
 </body>
 
 
