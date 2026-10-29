@@ -909,7 +909,7 @@
             // Clean up Add to Cart & View Details buttons (remove any reload-causing <a href=""> tags)
             const buttons = card.querySelectorAll('button');
             buttons.forEach(btn => {
-                const text = btn.textContent.trim().toLowerCase();
+                const text = btn.textContent.replace(/\s+/g, ' ').trim().toLowerCase();
                 if (text.includes('add to cart')) {
                     btn.innerHTML = '<i class="fas fa-cart-plus me-1"></i> Add to Cart';
                     btn.type = 'button';
@@ -1393,7 +1393,7 @@
 
         // 2. Service Cards ("See More" links)
         document.querySelectorAll('.service-card').forEach(card => {
-            const title = card.querySelector('h5')?.textContent.trim() || 'General Service';
+            const title = (card.querySelector('h5')?.textContent || 'General Service').replace(/\s+/g, ' ').trim();
             const seeMore = card.querySelector('.see-more-link');
             if (seeMore) {
                 seeMore.onclick = function (e) {
@@ -1405,7 +1405,7 @@
 
         // 3. "Schedule an Appointment" & "Browse Service" buttons
         document.querySelectorAll('.btn-schedule, .btn-primary-custom, .btn-outline-custom').forEach(btn => {
-            const txt = btn.textContent.trim().toLowerCase();
+            const txt = btn.textContent.replace(/\s+/g, ' ').trim().toLowerCase();
             if (txt.includes('browse service')) {
                 btn.innerHTML = 'Browse Service';
                 btn.type = 'button';
@@ -1432,8 +1432,8 @@
 
         // 4. Pricing Plan "Subscribe Now" buttons
         document.querySelectorAll('.pricing-card').forEach(card => {
-            const planName = card.querySelector('.card-title')?.textContent.trim() || 'Basic Plan';
-            const priceText = card.querySelector('.price')?.textContent.trim() || '$99';
+            const planName = (card.querySelector('.card-title')?.textContent || 'Basic Plan').replace(/\s+/g, ' ').trim();
+            const priceText = (card.querySelector('.price')?.textContent || '$99').replace(/\s+/g, ' ').trim();
             const subBtn = card.querySelector('button.btn-red');
             if (subBtn) {
                 subBtn.innerHTML = 'Subscribe Now';
