@@ -7,8 +7,7 @@
     <title>Service</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/service.css">
 </head>
 
@@ -511,27 +510,70 @@
 
     <section class="track-record">
         <div class="container">
-            <h2 class="text-center mb-4">We Repair All Makes of Automobiles</h2>
+            <h2 class="text-center mb-4">We Repair All Makes of <span class="text-danger">Automobiles</span></h2>
             <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur. Cras sed et in. At placerat.</p>
             <div class="brand-swiper swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper align-items-center">
                     <div class="swiper-slide">
-                        <img src="./assets/image 13.png" alt="Toyota Logo" class="brand-logo-img">
+                        <div class="brand-card">
+                            <img src="./assets/image 13.png" alt="Toyota Logo" class="brand-logo-img">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image 14.png" alt="Honda Logo" class="brand-logo-img">
+                        <div class="brand-card">
+                            <img src="./assets/image 14.png" alt="Honda Logo" class="brand-logo-img">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image 15.png" alt="BMW Logo" class="brand-logo-img">
+                        <div class="brand-card">
+                            <img src="./assets/image 15.png" alt="BMW Logo" class="brand-logo-img">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image 16.png" alt="Ford Logo" class="brand-logo-img">
+                        <div class="brand-card">
+                            <img src="./assets/image 16.png" alt="Ford Logo" class="brand-logo-img">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image 17.png" alt="Mercedes Logo" class="brand-logo-img">
+                        <div class="brand-card">
+                            <img src="./assets/image 17.png" alt="Mercedes Logo" class="brand-logo-img">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image 18.png" alt="Audi Logo" class="brand-logo-img">
+                        <div class="brand-card">
+                            <img src="./assets/image 18.png" alt="Audi Logo" class="brand-logo-img">
+                        </div>
+                    </div>
+                    <!-- Duplicate slides for seamless infinite loop across all breakpoints -->
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="./assets/image 13.png" alt="Toyota Logo" class="brand-logo-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="./assets/image 14.png" alt="Honda Logo" class="brand-logo-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="./assets/image 15.png" alt="BMW Logo" class="brand-logo-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="./assets/image 16.png" alt="Ford Logo" class="brand-logo-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="./assets/image 17.png" alt="Mercedes Logo" class="brand-logo-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="./assets/image 18.png" alt="Audi Logo" class="brand-logo-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -600,48 +642,45 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const swiper = new Swiper('.brand-swiper', {
+            new Swiper('.brand-swiper', {
                 loop: true,
-                slidesPerView: 'auto',
+                slidesPerView: 2,
                 spaceBetween: 20,
+                speed: 2500,
                 autoplay: {
                     delay: 0,
                     disableOnInteraction: false,
-                    reverseDirection: false,
+                    pauseOnMouseEnter: true
                 },
-                speed: 3000,
-                centeredSlides: false,
-                freeMode: true,
-                freeModeMomentum: false,
                 breakpoints: {
                     320: {
                         slidesPerView: 2,
-                        spaceBetween: 10,
+                        spaceBetween: 15
                     },
                     576: {
                         slidesPerView: 3,
-                        spaceBetween: 15,
+                        spaceBetween: 20
                     },
                     768: {
                         slidesPerView: 4,
-                        spaceBetween: 20,
+                        spaceBetween: 24
                     },
                     992: {
                         slidesPerView: 5,
-                        spaceBetween: 20,
+                        spaceBetween: 28
                     },
                     1200: {
                         slidesPerView: 6,
-                        spaceBetween: 20,
+                        spaceBetween: 30
                     }
                 }
             });
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
